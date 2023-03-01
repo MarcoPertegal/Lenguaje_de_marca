@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 02</title>
+    <link rel="stylesheet" href="ejercicio02.css">
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form name="resgistro" action="" method="" autocomplete="" enctype="multipart/from-data">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Su nombre aquí" required autofocus autocomplete maxlength="50"><br>
+        <br>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="Su email aquí" required autofocus autocomplete maxlength="80"><br>
+        <br>
+        <label for="email">Nombre de Usuario</label>
+        <input type="text" name="nombreDeUsuario" id="nombreDeUsuario" placeholder="Nombre de Usuario" required autofocus autocomplete maxlength="12"><br>
+        <br>
+        <label for="contrasenia">Contreaseña</label>
+        <input type="password" name="contrasenia" id="contrasenia" placeholder="contrasenia" required autofocus autocomplete maxlength="50"><br>
+        <br>
+        <label for="repetirContrasenia">Repetir Contreaseña</label>
+        <input type="password" name="repetirContrasenia" id="repetirContrasenia" placeholder="repetirContrasenia" required autofocus autocomplete maxlength="50"><br>
+        <br>
+        <label for="sexo">Sexo</label></form>
+            <input type="radio" name="sexo" value="M">Masculino<br>
+            <input type="radio" name="sexo" value="F">Femenino<br>
+            <input type="radio" name="sexo" value="O">Otro<br>
+        <br>
+        <label for="fnac">Fecha Nacimiento</label>
+        <input type="date" name="fnac" id="fnac" min="1900-01-01" max="2023-02-21"><br>
+        <br>
+            <label for="algo">Aficiones</label><br>
+            <input type="checkbox" name="aficiones" value="Fútbol">Fútbol<br>
+            <input type="checkbox" name="aficiones" value="Baloncesto">Baloncesto<br>
+            <input type="checkbox" name="aficiones" value="Videojuegos">Videojuegos<br>
+            <input type="checkbox" name="aficiones" value="Patinar">Patinar<br>
+            <input type="checkbox" name="aficiones" value="Senderismo">Senderismo<br>
+            <input type="checkbox" name="aficiones" value="Labrar">Labrar<br>
+        <br>
+        <input type="submit" name="enviar" value="Enviar"> 
+    </form>
+</body>
+</html>

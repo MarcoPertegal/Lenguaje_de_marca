@@ -1,0 +1,95 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+#envoltorio{
+    margin-bottom: 0px;
+}
+#columna1 legend{
+    width: 200px;
+}
+input{
+    width:300px;
+    height: 30px;
+}
+#tamanioCajaNombre{
+    width: 200px;
+    height: 30px;
+}
+#caja{
+    padding-top: 3%;
+    display: flex;
+    padding-bottom: 3%;
+}
+#caja2{
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+}
+#caja2 .subcaja1 input{
+    width: 150px;
+}
+#caja2 .subcaja2 input{
+    width: 220px;
+}
+#caja3{
+    padding-top: 3%;
+    display: flex;
+    padding-bottom: 3%;
+}
+#caja4{
+    display: flex;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+#caja4 div input{
+    width: 250px;
+}
+#caja4 div{
+    margin-right: 3%;
+}
+.boton{
+    margin-left: 700px;
+    width: 200px;
+}
+#caja:hover{
+    background-color: lightsalmon;
+}
+legend{
+    margin-right: 5%;
+}
+#legend1{
+    margin-right: 11.5%;
+}
+#legend2{
+    margin-right: 14%;
+}
+#legend3{
+    margin-right: 12%;
+}
+#envoltorio2{
+    display: flex;
+}
+.subcaja1{
+    margin-right: 20%;
+}
+#caja:hover{
+    background-color: lightseagreen;
+}
+#caja2:hover{
+    background-color: lightseagreen;
+}
+#caja3:hover{
+    background-color: lightseagreen;
+}
+#caja4:hover{
+    background-color: lightseagreen;
+}
+p{
+    color: white;
+}
+

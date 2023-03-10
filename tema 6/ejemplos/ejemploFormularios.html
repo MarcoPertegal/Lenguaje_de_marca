@@ -9,47 +9,63 @@
         input:focus{
             border: blue 1px solid;
         }
+        fieldset{
+            background-color: lightblue;
+            border: 1px solid blue;
+        }
     </style>
 </head>
-<br>
+<body>
     <h1>Formulario Registro</h1>
     <form name="resgistro" action="" method="" autocomplete="" enctype="multipart/from-data"> 
         <!-- enctype solo si vamos a tener adjuntos -->
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Su nombre aquí" required autofocus autocomplete maxlength=""><br>
-        <!-- maxlenght= num max de caracteres -->
-        
-        <label for="apellido">Apellidos</label>
-        <input type="text" name="apellidos" id="apellidos" placeholder="Su apellido aquí"><br>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Su nombre aquí" required autofocus autocomplete maxlength=""><br>
+            <!-- maxlenght= num max de caracteres -->
+            
+            <label for="apellido">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Su apellido aquí"><br>
 
-        <!-- Botones -->
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" min="0" max="99" step="5" value="15" size="3">
+            <!-- Botones -->
+            <label for="sexo">Sexo</label></form>
+            <input type="radio" name="sexo" value="M">Masculino<br>
+            <input type="radio" name="sexo" value="F">Fem<br>
+            <input type="radio" name="sexo" value="MO">MO<br>
+            <input type="radio" name="sexo" value="M2">Masculino2<br>
+        </fieldset>
+        <fieldset>
+            <legend>Otros</legend>
+            <label for="algo">Algo</label><br>
+            <input type="checkbox" name="algo" value="M">A<br>
+            <input type="checkbox" name="algo" value="F">B<br>
+            <input type="checkbox" name="algo" value="MO">C<br>
 
-        <label for="sexo">Sexo</label></form>
-        <input type="radio" name="sexo" value="M">Masculino<br>
-        <input type="radio" name="sexo" value="F">Fem<br>
-        <input type="radio" name="sexo" value="MO">MO<br>
-        <input type="radio" name="sexo" value="M2">Masculino2<br>
+            <label for="fnac">Fecha Nacimiento</label>
+            <input type="date" name="fnac" id="fnac" min="1900-01-01" max="2023-02-21"><br>
 
-        <label for="algo">Algo</label><br>
-        <input type="checkbox" name="algo" value="M">A<br>
-        <input type="checkbox" name="algo" value="F">B<br>
-        <input type="checkbox" name="algo" value="MO">C<br>
-
-        <label for="texto" >brr</label><br>
-        <textarea name="texto" id="" cols="50" rows="10"></textarea><br>
-        
-        <label for="prov">Provincia</label>
-        <select name="prov">
-            <option value="se">Sevilla</option>
-            <option value="ca">Cádiz</option>
-            <option value="ma">Málaga</option>
-            <option value="gr">Granada</option>
-            <option value="hu">Huelva</option>
-            <option value="co">Córdoba</option>
-        </select><br>
-        
-        <label for="foto">Foto de perfil</label>
-        <input type="file" name="foto"  id="foto" accept="html. pdf"><br>
+            <label for="texto" >Cuenta tu vida</label><br>
+            <textarea name="texto" id="" cols="50" rows="10"></textarea><br>
+            
+            <label for="prov">Provincia</label>
+            <select name="prov">
+                <option value="se">Sevilla</option>
+                <option value="ca">Cádiz</option>
+                <option value="ma">Málaga</option>
+                <option value="gr">Granada</option>
+                <option value="hu">Huelva</option>
+                <option value="co">Córdoba</option>
+            </select><br>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Otros</legend>
+            <label for="foto">Foto de perfil</label>
+            <input type="file" name="foto"  id="foto" accept="html. pdf"><br>
+        </fieldset>
 
         <input type="submit" name="enviar" value="Enviar"> 
         <input type="reset" value="borrar todo">

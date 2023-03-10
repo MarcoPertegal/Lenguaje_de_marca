@@ -13,7 +13,20 @@
     <!-- Nuestra pagina de estidos css tiene que estar por detras de la de boosktrao -->
 </head>
 <body>
+  <!-- la p es el pading en este caso 0 -->
+  <!-- La información viene en bookstrap en la pesataña bs5 Containers y en grind basic -->
+  <header class="container-fluid p-0"> 
+    <h1 class="display-1 text-bg-success p-4" >Algo felipe</h1>
+  </header>
   
+  <p class="container-fluid">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi et dicta fuga odit eum, temporibus obcaecati similique. 
+    Dolores debitis a dolorum natus, ut ex ipsa esse soluta obcaecati sit optio?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio amet quos veritatis corporis dignissimos consequuntur 
+    officia, ipsum a impedit reiciendis recusandae eos. Nihil, eaque temporibus. Fuga laboriosam labore consequatur dolorum.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa asperiores excepturi optio, deleniti et quisquam. Sed ipsum harum aperiam corporis explicabo, veritatis tempore quod quae doloremque 
+    numquam aliquid id ipsa.
+  </p>
+
     <div class="container mt-3">
       <h2 class="display-1">Pills with Dropdown</h2>
       <ul class="nav nav-pills">
@@ -36,5 +49,26 @@
         </li>
       </ul>
     </div>
+    <footer class="container-fluid">
+      <div class="row">
+        <!-- El tamaño máximo que pueden ocupar es 12 las 4 suman 12 3+3+3+3 so sumaran 13 la clumna siguiente se va abajo -->
+        <!-- ¿QUE ES WORDPRESS? -->
+        <div class="border col-3">Una Columna</div>
+        <div class="border col-3">Una Columna</div>
+        <div class="border col-3">Una Columna</div>
+        <div class="border col-3">Una Columna</div>
+      </div>
+      <div class="row">
+        <!-- por defecto es col- 12 en las s y la xs en este caso si no especifico nada se queda como este en la primera sin especificar-->
+        <!-- Hay un boton que sirbe para ver la vista de movil al lado del nboton de clicar para seleccionar-->
+        <!-- Col asecas es igual que poner xs hay varias tallas xs-s-md-lg-xl-xxl -->
+        <div class="border col-12 col-md-6 col-xl-3">Una Columna</div>
+        <div class="border col-12 col-md-6 col-xl-3">Una Columna</div>
+        <div class="border col-12 col-md-6 col-xl-3">Una Columna</div>
+      </div>
+    </footer>
+    <!-- Cosa a tener en cuenta mirar primero el codigo antes de copiarlo, ese codigo siempre hay que tunearlo, si porejemplo un codigo para 
+    un menu viene en un div hay que cambarlo a un nav, cuando copie y pegue una hoja de estilos css darle click derecho despues format document 
+  para que se ordene -->
 </body>
 </html>
